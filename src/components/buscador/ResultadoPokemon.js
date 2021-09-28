@@ -12,8 +12,8 @@ const ResultadoPokemon = () => {
             {
             buscador.pokemon.length >= 1 &&
                 <div className="text-success">
-                <img src={buscador.pokemon[0].sprites.front_default} alt="Pokemon" />
-                <span>{buscador.pokemon[0].name.toUpperCase()}</span>
+                <img src={buscador.pokemon[0].sprites.front_default} alt="Pokemon" style={{width: '200px', height: 'auto', background: 'white', borderRadius: '10px'}}/>
+                <span style={{fontSize: '30px', marginLeft: '10px'}}><b>{buscador.pokemon[0].name.toUpperCase()}</b></span>
                 </div>
             }
             {buscador.error &&
